@@ -17,10 +17,6 @@ async def on_command_error(ctx, error):
 async def ping(ctx):
     await ctx.send('にゃーん')
     
-@bot.command()
-async def にゃーん(ctx):
-filepath = '/discordpy-startup/shiomi/しおみ.png'
-await client.send_file('message'.channel,filepath)
 
 
 bot.run(token)
