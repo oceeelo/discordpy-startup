@@ -19,7 +19,7 @@ async def ping(ctx):
 
 @bot.command()
 async def にゃーん(ctx):
-    await ctx.send('にゃーーーーん')
+    await ctx.send('/discordpy-startup/shiomi/しおみ.png')
     
 
 
