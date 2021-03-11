@@ -20,7 +20,7 @@ async def ping(ctx):
 @bot.command()
 async def にゃーん(ctx):
 filepath = '/discordpy-startup/shiomi/しおみ.png'
-await client.send_file(message.channel,filepath)
+await client.send_file('message'.channel,filepath)
 
 
 bot.run(token)
