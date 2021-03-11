@@ -13,13 +13,27 @@ async def on_command_error(ctx, error):
     await ctx.send(error_msg)
 
 
-@bot.command()
-async def ping(ctx):
-    await ctx.send('にゃーん')
-    
-@bot.command()
-async def にゃーん(ctx):
-    await ctx.send('にゃーーーん')
+
+
+
+@client.event
+async def on_message(message):
+
+if message.author.bot:
+return
+
+if message.content == 'にゃーん':
+await message.channel.send(にゃーーーん')
+
+
+if message.content == 'しおみ':
+filepath = '/path/to/dir/しおみ.png'
+await client.send_file(message.channel,filepath)
+
+if message.content == 'しおみ':
+filepath = '/path/to/dir/しおみ.png'
+await client.send_file(message.channel,filepath)
+
 
 
 bot.run(token)
