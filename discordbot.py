@@ -14,8 +14,8 @@ async def on_command_error(ctx, error):
 
 
 @bot.command()
-async def 糞サイト(ctx):
-    await ctx.send('https://shiomi-gyosei.com/companyoutline/')
+async def オグリキャップ(ctx):
+    await ctx.send('https://kamigame.jp/umamusume/page/109898038796877831.html')
     
 @bot.command()
 async def にゃーん(ctx):
