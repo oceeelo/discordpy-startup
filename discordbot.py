@@ -13,17 +13,13 @@ async def on_command_error(ctx, error):
     await ctx.send(error_msg)
 
 
-
-
-
-@client.event
-async def on_message(message):
-
-if message.author.bot:
-return
-
-if message.content == 'にゃーん':
-await message.channel.send(にゃーーーん')
+@bot.command()
+async def ping(ctx):
+    await ctx.send('にゃーん')
+    
+@bot.command()
+async def にゃーん(ctx):
+    await ctx.send('にゃーーーん')
 
 
 bot.run(token)
