@@ -21,5 +21,15 @@ async def オグリキャップ(ctx):
 async def にゃーん(ctx):
     await ctx.send('にゃーーーん')
 
+# 発言時に実行されるイベントハンドラを定義
+@client.event
+async def on_message(message):
+    if message.content == '/cleanup':
+        if message.author.guild_permissions.administrator:
+            await message.channel.purge()
+            await message.channel.send('塵一つ残らないね！')
+        else:
+            await message.channel.send('何様のつもり？')
+
 
 bot.run(token)
