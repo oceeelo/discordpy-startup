@@ -27,12 +27,9 @@ await message.channel.send(にゃーーーん')
 
 
 if message.content == 'しおみ':
-filepath = '/path/to/dir/しおみ.png'
+filepath = '/discordpy-startup/shiomi/しおみ.png'
 await client.send_file(message.channel,filepath)
 
-if message.content == 'しおみ':
-filepath = '/path/to/dir/しおみ.png'
-await client.send_file(message.channel,filepath)
 
 
 
