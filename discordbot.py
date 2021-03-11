@@ -26,11 +26,4 @@ if message.content == 'にゃーん':
 await message.channel.send(にゃーーーん')
 
 
-if message.content == 'しおみ':
-filepath = '/discordpy-startup/shiomi/しおみ.png'
-await client.send_file(message.channel,filepath)
-
-
-
-
 bot.run(token)
