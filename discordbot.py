@@ -13,7 +13,7 @@ async def on_command_error(ctx, error):
 
 @bot.command()
 async def ping(ctx):
-    await ctx.send('にゃーん')
+    await ctx.send('https://cdn.discordapp.com/attachments/819481210794541067/819543079278739492/siomi.jpg')
     
 @bot.command()
 async def にゃーん(ctx):
